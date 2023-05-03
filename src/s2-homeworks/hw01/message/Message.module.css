@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     margin-right: 10px;
+    justify-content: flex-end;
 }
 
 .imageAndText img {
@@ -17,9 +18,16 @@
     border-radius: 50%;
 }
 
+.imgWrapper {
+    margin-left: 10px;
+    padding-top: 25px;
+    order: 2;
+}
+
 .text {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 .text:after {
@@ -29,6 +37,7 @@
 .name {
     font-weight: bold;
     margin-bottom: 5px;
+    justify-content: flex-end;
 }
 
 .messageText {
