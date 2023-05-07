@@ -1,36 +1,91 @@
 .greetingForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
 }
 
 .inputAndButtonContainer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 1rem;
+    width: 400px;
 }
 
 .error {
+    color: #dc3545;
+    font-size: 0.875rem;
 }
 
 .input {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .input:focus {
-    font-size-adjust: none;
 }
 
 .errorInput {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .button {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 .button:focus {
+
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
 }
 
 .button:active {
 }
 
 .button:disabled {
+    opacity: 0.65;
 }
 
 .text {
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .greeting {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
 }
