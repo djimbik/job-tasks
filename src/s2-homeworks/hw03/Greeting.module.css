@@ -11,6 +11,7 @@
 }
 
 .input:focus {
+    font-size-adjust: none;
 }
 
 .errorInput {
